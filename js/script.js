@@ -38,13 +38,23 @@ bottomBtn.addEventListener('click', function(){
   items[imgCounter].classList.add('hide');
   imgCounter++
   items[imgCounter].classList.remove('hide');
-
+  topBtn.classList.remove('hide-btn')
   console.log(items[imgCounter])
+  if(imgCounter === 4){
+    bottomBtn.classList.add('hide-btn')
+  }
 })
 
 topBtn.addEventListener('click', function(){
-  console.log('ciao')
+  items[imgCounter].classList.add('hide');
+  imgCounter--
+  items[imgCounter].classList.remove('hide');
+  bottomBtn.classList.remove('hide-btn')
+  if(imgCounter === 0){
+    topBtn.classList.add('hide-btn')
+  }
 })
+
 
 
 

@@ -28,11 +28,10 @@
   height: 100%;
   width: 100%;
 }
-.slider .stray,
-.slider .fortnite {
+.slider .right {
   object-position: right;
 }
-.item.hide {
+.item.hide, .hide-btn {
   display: none;
 }
 .slider .arrow {
