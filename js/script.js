@@ -30,9 +30,7 @@ const items = imgWrapper.getElementsByClassName('item')
 
 let imgCounter = 0
 items[imgCounter].classList.remove('hide')
-if(imgCounter === 2 || imgCounter === 3){
-  items[imgCounter].classList.add('right')
-}
+
 
 console.log(items[imgCounter])
 
@@ -46,6 +44,9 @@ bottomBtn.addEventListener('click', function(){
   if(imgCounter === 4){
     bottomBtn.classList.add('hide-btn')
   }
+  if(imgCounter === 2 || imgCounter === 3){
+    items[imgCounter].classList.add('right')
+  }
 })
 
 topBtn.addEventListener('click', function(){
@@ -55,6 +56,9 @@ topBtn.addEventListener('click', function(){
   bottomBtn.classList.remove('hide-btn')
   if(imgCounter === 0){
     topBtn.classList.add('hide-btn')
+  }
+  if(imgCounter === 2 || imgCounter === 3){
+    items[imgCounter].classList.add('right')
   }
 })
 
