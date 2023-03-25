@@ -26,9 +26,12 @@ for (i = 0; i < images.length; i++) {
 
 
 
-const items = imgWrapper.getElementsByClassName('hide')
+const items = imgWrapper.getElementsByClassName('item')
+
 let imgCounter = 0
 items[imgCounter].classList.remove('hide')
+
+console.log(items[imgCounter])
 
 bottomBtn.addEventListener('click', function(){
 
