@@ -30,6 +30,9 @@ const items = imgWrapper.getElementsByClassName('item')
 
 let imgCounter = 0
 items[imgCounter].classList.remove('hide')
+if(imgCounter === 2 || imgCounter === 3){
+  items[imgCounter].classList.add('right')
+}
 
 console.log(items[imgCounter])
 
