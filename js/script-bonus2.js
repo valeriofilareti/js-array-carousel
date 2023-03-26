@@ -64,6 +64,8 @@ const overlay = document.getElementsByClassName('overlay')
 
 overlay[imgCounter].classList.remove('on')
 
+overlay[imgCounter].classList.add('active')
+
 // img-control counter
 
 
@@ -74,33 +76,43 @@ overlay[imgCounter].classList.remove('on')
     if(imgCounter === 0){
       items[imgCounter].classList.add('hide')
       overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter++
       items[imgCounter].classList.remove('hide')
       overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 1){
       items[imgCounter].classList.add('hide')
       overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter++
       items[imgCounter].classList.remove('hide')
       overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 2){
       items[imgCounter].classList.add('hide')
       overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter++
       items[imgCounter].classList.remove('hide')
       overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 3){
       items[imgCounter].classList.add('hide')
       overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter++
       items[imgCounter].classList.remove('hide')
       overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 4){
         items[imgCounter].classList.add('hide')
         overlay[imgCounter].classList.add('on')
+        overlay[imgCounter].classList.remove('active')
         imgCounter = 0
         items[imgCounter].classList.remove('hide')
         overlay[imgCounter].classList.remove('on')
+        overlay[imgCounter].classList.add('active')
     }
     console.log(imgCounter)
   })
@@ -108,24 +120,44 @@ overlay[imgCounter].classList.remove('on')
   topBtn.addEventListener('click', function(){
     if(imgCounter === 0){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter = 4
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 4){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter--
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 3){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter--
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 2){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
+      overlay[imgCounter].classList.remove('active')
       imgCounter--
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
+      overlay[imgCounter].classList.add('active')
     }else if(imgCounter === 1){
         items[imgCounter].classList.add('hide')
+        overlay[imgCounter].classList.add('on')
+        overlay[imgCounter].classList.remove('active')
         imgCounter --
         items[imgCounter].classList.remove('hide')
+        overlay[imgCounter].classList.remove('on')
+        overlay[imgCounter].classList.add('active')
     }
     console.log(imgCounter)
   })
