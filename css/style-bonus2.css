@@ -34,10 +34,26 @@
 .slider .right {
   object-position: right;
 }
+.slider-control {
+  position: relative;
+  height: 60%;
+  width: 20%;
+  background-color: aqua;
+}
+.slider-control .cell {
+  border: 1px solid black;
+  width: 100%;
+  height: 20%;
+}
+.cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .item.hide, .hide-btn {
   display: none;
 }
-.slider .arrow {
+.slider-control .arrow {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -52,9 +68,9 @@
   z-index: 999;
   cursor: pointer;
 }
-.slider .arrow.up {
+.slider-control .arrow.up {
   top: 10px;
 }
-.slider .arrow.down {
+.slider-control .arrow.down {
   bottom: 10px;
 }
