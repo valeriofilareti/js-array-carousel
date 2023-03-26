@@ -48,10 +48,14 @@ items[imgCounter].classList.remove('hide')
 let imgControlCounter = 0;
 
 const imgControls = document.getElementsByClassName('cell')
+
 console.log(imgControls)
+
 for(i=0; i < imgControls.length; i++) {
   const img = images[i];
   imgControls[imgControlCounter].innerHTML += `<img class="item" src="${img}">`;
+  imgControls[imgControlCounter].innerHTML += `<div class="overlay"></div>`;
+
   imgControlCounter++
   console.log(imgControlCounter)
 }
