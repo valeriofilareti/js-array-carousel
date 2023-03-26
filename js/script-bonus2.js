@@ -54,11 +54,15 @@ console.log(imgControls)
 for(i=0; i < imgControls.length; i++) {
   const img = images[i];
   imgControls[imgControlCounter].innerHTML += `<img class="item" src="${img}">`;
-  imgControls[imgControlCounter].innerHTML += `<div class="overlay"></div>`;
+  imgControls[imgControlCounter].innerHTML += `<div class="overlay on"></div>`;
 
   imgControlCounter++
   console.log(imgControlCounter)
 }
+
+const overlay = document.getElementsByClassName('overlay')
+
+overlay[imgCounter].classList.remove('on')
 
 // img-control counter
 
@@ -69,24 +73,34 @@ for(i=0; i < imgControls.length; i++) {
   bottomBtn.addEventListener('click', function(){
     if(imgCounter === 0){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
       imgCounter++
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
     }else if(imgCounter === 1){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
       imgCounter++
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
     }else if(imgCounter === 2){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
       imgCounter++
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
     }else if(imgCounter === 3){
       items[imgCounter].classList.add('hide')
+      overlay[imgCounter].classList.add('on')
       imgCounter++
       items[imgCounter].classList.remove('hide')
+      overlay[imgCounter].classList.remove('on')
     }else if(imgCounter === 4){
         items[imgCounter].classList.add('hide')
+        overlay[imgCounter].classList.add('on')
         imgCounter = 0
         items[imgCounter].classList.remove('hide')
+        overlay[imgCounter].classList.remove('on')
     }
     console.log(imgCounter)
   })
